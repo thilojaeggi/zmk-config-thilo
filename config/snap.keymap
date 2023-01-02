@@ -12,17 +12,14 @@
 &right_encoder { resolution = <2>; };
 
 / {
-	sensors {
-		compatible = "zmk,keymap-sensors";
-		sensors = <&left_encoder &right_encoder>;
-	};
+	
 
 	behaviors {
-        stest: stest {
-           compatible = "zmk,behavior-sensor-rotate";
-           label = "sensor test";
-           #sensor-binding-cells = <0>;
-           bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
         };
     };
 
