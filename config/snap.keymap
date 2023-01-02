@@ -13,8 +13,8 @@ sensors {
 		status = "okay";
 		sensors = <&left_encoder &right_encoder>;
 	};
-	&left_encoder { resolution = <2>; };
-	&right_encoder { resolution = <2>; };
+	&left_encoder { status = "okay"; };
+	&right_encoder { status = "okay"; };
 
 
 / {
