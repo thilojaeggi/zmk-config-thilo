@@ -16,7 +16,7 @@
 / {
 	
 	sensors {
-		compatible = "zmk";
+		compatible = "zmk,behavior-sensor-rotate";
 		sensors = <&left_encoder &right_encoder>;
 	};
 	
