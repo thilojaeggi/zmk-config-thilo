@@ -8,17 +8,18 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/rgb.h>
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
 
+sensors {
+		status = "okay";
+		sensors = <&left_encoder &right_encoder>;
+	};
+	&left_encoder { resolution = <2>; };
+	&right_encoder { resolution = <2>; };
 
 
 / {
 	
-	sensors {
-		compatible = "zmk,behavior-sensor-rotate";
-		sensors = <&left_encoder &right_encoder>;
-	};
+	
 	
 	behaviors {
         rgb_encoder: rgb_encoder {
