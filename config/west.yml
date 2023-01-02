@@ -7,7 +7,6 @@ manifest:
   projects:
     - name: zmk
       remote: thilojaeggi
-      revision: display/bongo-cat-widget
       import: app/west.yml
   self:
     path: config
