@@ -13,7 +13,7 @@
 
 / {
 	sensors {
-		compatible = "zmk,keymap-sensors";
+        compatible = "zmk,behavior-sensor-rotate";
 		sensors = <&left_encoder &right_encoder>;
 	};
 
@@ -44,7 +44,7 @@
 
 		function_layer {
 			label = "Function";
-			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_NEXT C_PREV>;
+			sensor-bindings = <&rgb_encoder>;
 			bindings = <
              &bootloader &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &bootloader
 &kp C_PP     &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &trans     &kp C_PP
