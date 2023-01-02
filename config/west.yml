@@ -1,13 +1,11 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: sensor-test
-      url-base: https://github.com/nickconway
+      url-base: https://github.com/thilojaeggi
   projects:
     - name: zmk
-      remote: sensor-test
-      revision: configurable-sensor-bindings
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config

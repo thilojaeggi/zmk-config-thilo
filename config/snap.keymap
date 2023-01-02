@@ -13,12 +13,17 @@
 
 / {
 
+	sensors {
+		compatible = "zmk,rgb_encoder";
+		sensors = <&left_encoder &right_encoder>;
+	};
+
 	behaviors {
         rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+           compatible = "zmk,behavior-sensor-rotate";
+           label = "RGB_ENCODER";
+           #sensor-binding-cells = <0>;
+           bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
         };
     };
 
